@@ -8,6 +8,8 @@ print(x)
 print(type(x[0]))
 print(x[0].__dict__)
 
+#TODO: remove this file
+
 
 
 # python -m src.QuoteEngine.run

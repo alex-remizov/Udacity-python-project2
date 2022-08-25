@@ -4,14 +4,14 @@ from PIL import Image, ImageDraw, ImageFont
 from random import randint
 
 
-class MemeGenerator:
+class MemeEngine:
     """Class that generates meme."""
 
     def __init__(self, output_dir):
         """Initialize a mem with output_dir."""
         self.output_dir = output_dir
 
-    def make_mem(self, img_path, text, author, width=500) -> str:
+    def make_meme(self, img_path, text, author, width=500) -> str:
         """Make and save the mem. retun the path of a mem."""
         img = Image.open(img_path)
 

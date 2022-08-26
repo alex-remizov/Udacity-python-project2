@@ -27,8 +27,10 @@ class MemeEngine:
             font = ImageFont.truetype("arial.ttf", 20)
             message = f'{text} - {author}'
             draw.text(
-                (randint(0, width*0.66), randint(0, width*0.66)),
+                (randint(0, width*0.2), randint(0, width*0.9)),
                 message, font=font, fill='black')
 
-        img.save(self.output_dir)
-        return self.output_dir
+        path_out = f'{self.output_dir}/pic.jpg'
+
+        img.save(path_out)
+        return path_out
